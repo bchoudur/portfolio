@@ -1,0 +1,57 @@
+header {
+  background: #f5f5f5;
+  padding-top: 20px; }
+
+.sections {
+  margin: 50px 0 30px 0; }
+
+.title {
+  font-size: 20px;
+  color: #545454; }
+
+.nav-bar ul {
+  list-style: none;
+  float: right;
+  position: relative; }
+  .nav-bar ul li {
+    display: inline-block; }
+    .nav-bar ul li a {
+      padding: 15px;
+      font-size: 18px;
+      color: #545454; }
+
+.sub-nav {
+  position: relative; }
+  .sub-nav ul {
+    position: absolute;
+    display: none;
+    width: 150px;
+    background: #f5f5f5;
+    z-index: 1;
+    padding: 0;
+    margin-top: 20px; }
+    .sub-nav ul li {
+      display: block;
+      background: #FFB41E; }
+    .sub-nav ul a {
+      background: #27FFFE;
+      margin-bottom: 25px; }
+
+.sub-nav:hover ul {
+  display: block; }
+
+/********************************PROFILE SECTION********************************/
+.profile-pic-sec img {
+  width: 300px;
+  -webkit-box-shadow: -26px 40px 0px 0px #ff6c39;
+  box-shadow: -26px 40px 0px 0px #ff6c39; }
+
+/********************************EDUCATION SECTION********************************/
+#education {
+  background: #f5f5f5; }
+
+.education-info {
+  padding: 50px 50px 0 100px; }
+
+.education-pic img {
+  width: 100%; }
