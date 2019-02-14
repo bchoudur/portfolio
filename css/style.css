@@ -1,3 +1,22 @@
+/********************************UNIVERSAL STYLES********************************/
+.container {
+  min-width: 70%; }
+
+.section-title {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ff6c39;
+  text-decoration-color: #ff6c39; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #545454; }
+
+a:hover {
+  color: #ff6c39; }
+
+/********************************HEADER SECTION********************************/
 header {
   background: #f5f5f5;
   padding-top: 20px; }
@@ -10,41 +29,49 @@ header {
   color: #545454; }
 
 .nav-bar ul {
-  list-style: none;
-  float: right;
-  position: relative; }
+  float: right; }
   .nav-bar ul li {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
     .nav-bar ul li a {
       padding: 15px;
       font-size: 18px;
       color: #545454; }
 
-.sub-nav {
-  position: relative; }
-  .sub-nav ul {
-    position: absolute;
-    display: none;
-    width: 150px;
-    background: #f5f5f5;
-    z-index: 1;
-    padding: 0;
-    margin-top: 20px; }
-    .sub-nav ul li {
-      display: block;
-      background: #FFB41E; }
-    .sub-nav ul a {
-      background: #27FFFE;
-      margin-bottom: 25px; }
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  background: #f5f5f5;
+  z-index: 5;
+  min-width: 300px; }
+  .dropdown li {
+    clear: both;
+    width: 100%;
+    padding: 10px; }
 
-.sub-nav:hover ul {
+.nav-bar ul li:hover > ul,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
   display: block; }
 
-/********************************PROFILE SECTION********************************/
+/********************************ABOUT SECTION********************************/
 .profile-pic-sec img {
   width: 300px;
   -webkit-box-shadow: -26px 40px 0px 0px #ff6c39;
+  -moz-box-shadow: -26px 40px 0px 0px #ff6c39;
   box-shadow: -26px 40px 0px 0px #ff6c39; }
+
+.about-sec ul {
+  padding: 0; }
+
+.about-sec li {
+  display: inline-block;
+  width: calc(100%/3 - 10px);
+  margin-top: 20px; }
 
 /********************************EDUCATION SECTION********************************/
 #education {
@@ -55,3 +82,21 @@ header {
 
 .education-pic img {
   width: 100%; }
+
+/********************************WORK EXPERIENCE SECTION********************************/
+.work-title {
+  text-align: center; }
+
+.work-card-wrapper {
+  text-align: center; }
+
+.work-card {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+  background: #f5f5f5;
+  margin: 20px 10px 0 10px; }
+  .work-card img {
+    width: 100%; }
+  .work-card ul {
+    float: left; }
